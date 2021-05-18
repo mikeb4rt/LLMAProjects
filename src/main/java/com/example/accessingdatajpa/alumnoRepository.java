@@ -1,16 +1,7 @@
 package com.example.accessingdatajpa;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.List;
+public interface AlumnoRepository extends JpaRepository<Alumno, Integer> {
 
-/**
- * Created by: Daniels
- * Date: 14/05/2021
- * Description:
- */
-public interface alumnoRepository extends CrudRepository<AlumnoEntity, Long> {
-    List<AlumnoEntity> findByNombre(String nombre);
-
-    AlumnoEntity findById(long id);
-}
+    }
