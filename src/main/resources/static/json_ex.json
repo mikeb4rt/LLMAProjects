@@ -1,0 +1,8 @@
+{
+"nombre":"Joan Matas",
+"edad":20,
+"asignaturas":[
+{"nombre":"Lenguajes de marcas", "nota":9},
+{"nombre":"Programación multimedia", "nota":8}
+]
+}
