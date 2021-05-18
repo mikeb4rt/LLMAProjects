@@ -4,23 +4,17 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
-/**
- * Created by: Daniels
- * Date: 14/05/2021
- * Description:
- */
 @Entity
-public class AlumnoEntity {
+public class Alumno {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    private Long id;
+    private int id;
     private String nombre;
     private int edad;
 
-    protected AlumnoEntity() {}
+    protected Alumno() {}
 
-    public AlumnoEntity(Long id, String nombre, int edad) {
+    public Alumno(int id, String nombre, int edad) {
         this.id = id;
         this.nombre = nombre;
         this.edad = edad;
@@ -33,7 +27,7 @@ public class AlumnoEntity {
                 id, nombre, edad);
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
