@@ -20,7 +20,8 @@ public class AlumnoEntity {
 
     protected AlumnoEntity() {}
 
-    public AlumnoEntity(String nombre, int edad) {
+    public AlumnoEntity(Long id, String nombre, int edad) {
+        this.id = id;
         this.nombre = nombre;
         this.edad = edad;
     }
